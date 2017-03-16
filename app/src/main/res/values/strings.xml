@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Body Warmups</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="PlayButton">Play</string>
+    <string name="min7">7.5 min</string>
+    <string name="min5">5 min</string>
+    <string name="min10">10 min</string>
+    <string name="set1">set 1</string>
+    <string name="set2">set 2</string>
+    <string name="set3">set 3</string>
+    <string name="Play">Play</string>
+    <string name="title_activity_settings">Settings</string>
+</resources>

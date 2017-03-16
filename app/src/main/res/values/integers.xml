@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="secsFor5Min">33</integer>
+    <integer name="secsFor7Min">48</integer>
+    <integer name="secsFor10Min">63</integer>
+</resources>

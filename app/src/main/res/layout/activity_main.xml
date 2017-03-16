@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:layout_weight="1.3"
+    android:layout_gravity="center"
+    android:background="#000000"
+    >
+
+    <RadioGroup
+        android:id="@+id/minutesgroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:clickable="false"
+        android:baselineAligned="false"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/min5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/min5"
+            android:button="@android:drawable/btn_radio"
+            android:textColor="@android:color/white"
+            android:layout_gravity="left"
+            android:paddingRight="30dp"
+            android:paddingLeft="0dp"
+            android:clickable="true" />
+
+        <RadioButton
+            android:id="@+id/min7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/min7"
+            android:button="@android:drawable/btn_radio"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:paddingRight="30dp"
+            android:checked="false"
+            android:clickable="true" />
+
+        <RadioButton
+            android:id="@+id/min10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/min10"
+            android:button="@android:drawable/btn_radio"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:clickable="true"
+            android:checked="false" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/setsGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:clickable="false"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/set1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/set1"
+            android:button="@android:drawable/btn_radio"
+            android:textColor="@android:color/white"
+            android:layout_gravity="left"
+            android:paddingRight="30dp"
+            android:paddingLeft="0dp"
+            android:clickable="true" />
+
+        <RadioButton
+            android:id="@+id/set2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/set2"
+            android:button="@android:drawable/btn_radio"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:paddingLeft="0dp"
+            android:paddingRight="30dp"
+            android:checked="false"
+            android:clickable="true" />
+
+        <RadioButton
+            android:id="@+id/set3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/set3"
+            android:button="@android:drawable/btn_radio"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:clickable="true"
+            android:checked="false" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/play"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:text="@string/PlayButton"
+        android:src="@drawable/media_play_green"
+        android:background="#010101"
+        android:contentDescription="@string/Play"
+        android:clickable="true"
+        android:layout_below="@+id/setsGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/PlayButton"
+        android:src="@drawable/gear"
+        android:background="#010101"
+        android:contentDescription="@string/Play"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:layout_alignTop="@+id/info"
+        android:layout_alignRight="@+id/setsGroup"
+        android:layout_alignEnd="@+id/setsGroup" />
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/PlayButton"
+        android:src="@drawable/about"
+        android:background="#010101"
+        android:contentDescription="@string/Play"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/settings"
+        android:layout_toStartOf="@+id/settings"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp" />
+
+
+</RelativeLayout>
